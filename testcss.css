@@ -1,13 +1,17 @@
 body{
   font: sans-serif, Arial;
   font-size:1em;
-  line-height: 1.5;
   margin:0;
   padding:0;
   background-color: #f4f4f4;
 }
 
 /*Global*/
+.orange{
+  color:#4073FF;
+}
+
+
 .container{
   width: 80%;
   margin:auto;
@@ -16,27 +20,27 @@ body{
 
 /*Header*/
 header{
-  background-color: gray;
+  background-color: #151515;
   min-heigth:70px;
 }
 
 header a{
-  color: black;
+  color: #F1F1F1;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
 }
 
 header a:hover{
   transition: 0.5s;
-  color:white;
+  color:#4073FF;
 }
 
 header ul{
   margin:0;
   padding:0;
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 header li{
@@ -49,19 +53,36 @@ header #top{
   float:left;
 }
 
-header #top h1{
-  font-size: 2.5em;
-  display: inline;
-  padding-left: 10px;
-  color:lightblue;
+
+header #top{
+  display: flex;
 }
 
-header #top img{
+header #top .pic img{
   margin:0;
+  padding:0;
   width: 100px;
+}
+
+header #top .text{
+  padding-top:20px;
+  padding-left: 30px;
+}
+
+header #top .text h1{
+  font-size: 3.5em;
+  display: inline;
+  color:#F1F1F1;
 }
 
 header nav{
   float: right;
-  padding-top: 30px;
+  padding-top: 15px;
+}
+
+#showcase {
+  min-height: 700px;
+  background-image: url('./bilder/background.jpg');
+  background-position: no-repeat;
+  background-size: cover;
 }
