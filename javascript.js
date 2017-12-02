@@ -6,7 +6,7 @@ function autoScrollTo(el) {
 	var targetY = document.getElementById(el).offsetTop;
 	var bodyHeight = document.body.offsetHeight;
 	var yPos = currentY + window.innerHeight;
-	var animator = setTimeout('autoScrollTo(\''+el+'\')',25);
+	var animator = setTimeout('autoScrollTo(\''+el+'\')',15);
 	if(yPos > bodyHeight){
 		clearTimeout(animator);
 	} else {
