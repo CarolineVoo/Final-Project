@@ -1,9 +1,10 @@
 body{
-  font: sans-serif, Arial;
+  font: serif, Arial;
   font-size:1em;
   margin:0;
   padding:0;
   background-color: #f4f4f4;
+  line-height: 1.5;
 }
 
 h1, p{
@@ -23,7 +24,7 @@ h1, p{
 
 
 .transblack{
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.7 );
   width:500px;
 }
 
@@ -36,20 +37,34 @@ h1, p{
   margin:auto;
 }
 
+#backUp{
+  text-align: center;
+  background-color: black;
+  width:50px;
+  height:50px;
+  position: fixed;
+  right:50px;
+  bottom:50px;
+  border-radius: 30px;
+}
+
+#backUp h1{
+  margin:auto;
+  color:white;
+}
+
 /*Header*/
 header{
   background-color: #151515;
   min-heigth:70px;
-  position:fixed;
   width:100%;
-  opacity: 0.8;
 }
 
 header a{
   color: #FAFAFA;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.6em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
@@ -106,8 +121,8 @@ header nav{
 header nav div img{
   margin:0;
   padding:0;
-  padding: 25px 0 0 0;
-  width:40px;
+  padding: 25px 0 0 10px;
+  width:50px;
   opacity: 0.8;
 }
 
@@ -115,10 +130,7 @@ header nav div img:hover{
   opacity: 1;
 }
 
-#blank{
-  min-height: 110px;
-  background-color: #151515;
-}
+/*showcase*/
 
 #showcase {
   min-height: 700px;
@@ -141,8 +153,38 @@ header nav div img:hover{
   color:#FAFAFA;
 }
 
+#learn{
+  margin:auto;
+  background-color: rgba(10, 10, 10, 0.5);
+  margin:auto;
+  width:10%;
+  left:45%;
+  bottom: 10%;
+  text-align: center;
+  border: 1px solid black;
+  position: absolute;
+  border-radius: 10px;
+  min-height: 30px;
+}
+
+#learn:hover{
+  transition: 0.5s;
+  background-color: rgba(10,10,10,1);
+}
+
+#learn h1{
+  padding-top:2px;
+  margin:auto;
+  font-size: 1.4em;
+  color: #f4f4f4;
+}
+
 #underText{
   padding-bottom:1px;
+}
+
+#underText h1{
+  font-size: 2.5em;
 }
 
 #topics{
@@ -153,19 +195,27 @@ header nav div img:hover{
   text-align: center;
 }
 
-#main h1, #contact h1{
-  font-size: 2.7em;
-  text-align: center;
+.conText{
+  padding: 0 0 1px 0;
 }
 
-#main::after, #contact::after{
-  background-color: #4073FF;
-  height: 0.5px;
-  width: 300px;
-  display: block;
-  content: "";
-  margin:auto;
+.conText p{
+  font-size: 1.3em;
 }
+
+.main{
+  padding-top:50px;
+}
+
+.main h1, #contact h1{
+  font-size: 2.7em;
+  text-align: center;
+  border-bottom: 1.5px solid #4073FF;
+  width:50%;
+  margin:auto;
+  padding: 20px 0 30px 0;
+}
+
 
 #contact{
   padding-bottom: 50px;
@@ -173,6 +223,10 @@ header nav div img:hover{
 
 #solution{
   background-color: #E9E9E9;
+}
+
+#slider-container{
+
 }
 
 
@@ -192,7 +246,6 @@ footer{
 #multimedia .box img{
   width:40px;
 }
-
 
 #portrait{
   padding-top: 170px;
