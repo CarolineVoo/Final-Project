@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="testcss.css">
     <meta name="viewport" content="width=device-width">
     <title>Test</title>
+    <script src ="javascript.js"></script>
+
   </head>
   <body>
     <header>
@@ -13,34 +15,33 @@
           <div class="pic">
             <img src="./bilder/Icon.png" alt="">
           </div>
-          <div class="text">
-            <h1>EduLife <span class="orange">Student</span> Platform</h1>
-          </div>
-
-
         </div>
         <nav>
           <div class="links">
             <ul>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+              <li><a href="#div1" onclick="return false;" onmousedown="autoScrollTo('div1');">EduLife?</a></li>
+              <li><a href="#" onclick="return false;" onmousedown="autoScrollTo('solution')">Løsning</a></li>
+              <li><a href="#">Funksjoner</a></li>
+              <li><a href="#">Om oss</a></li>
+              <li><a href="#">kontakt</a></li>
             </ul>
           </div>
           <div class="nor">
-            <a href="#"><img src="./bilder/norsk.png" alt=""></a>
+            <a href="#"><img src="./bilder/Norsk.jpg" alt=""></a>
           </div>
           <div class="eng">
-            <a href="#"><img src="./bilder/english.png" alt=""></a>
+            <a href="#"><img src="./bilder/British.jpg" alt=""></a>
           </div>
 
         </nav>
       </div>
     </header>
 
-    <div id="blank">
+    <!-- <div id="blank"></div> -->
 
-    </div>
+    <a href="#top" onclick="return false;" onmousedown="resetScroller('top')"><div id="backUp">
+      <h1>▲</h1>
+    </div></a>
 
     <section id="showcase">
       <div class="container topPadding">
@@ -49,47 +50,90 @@
             <img src="./bilder/EdulifeLogo2.png" alt="">
           </div> -->
           <div id="underText">
-            <h1>Tekstteksttekst List?</h1>
+              <h1>EduLife <span class="orange">Student</span> Platform</h1>
           </div>
         </div>
+      </div>
+      <div id="learn">
+        <h1>Lær Mer</h1>
       </div>
     </section>
 
     <section id="topics">
-      <div class="container">
-        <div id="main">
+      <div id="div1" class="container">
+        <div class="main">
           <h1>Hvorfor EduLife?</h1>
         </div>
         <div class="topic">
-          <h1>Overskrift1</h1>
+          <h1>Studenter har problemer med å ta i bruk ulike og avanserte undervisnings praksiser</h1>
         </div>
         <div class="conText">
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora</p>
+          <p>Dagens digitale læringsplattformer har problemer med å være enkelt nok til daglig bruk i læring. Studenter har ofte vanskeligheter med å kombinere f.eks. timeplan, studentmail og booking av grupperom. Studenter må gjøre dette gjennom flere forskjellige plattformer. </p>
         </div>
         <div class="topic">
-          <h1>Overskrift2</h1>
+          <h1>Vanskelig og få oversikt om hvor alle undervisnings verktøy er</h1>
         </div>
         <div class="conText">
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora</p>
+          <p>I dag må vi bruke mange forskjellige nettsider for å få med oss hva som skjer i de ulike fagene. Eksempel på dette er at noen lærere velger å lage en egen nettside fordi dagens læringsplattformer ikke er fleksible nok.</p>
         </div>
         <div class="topic">
-          <h1>Overskrift3</h1>
+          <h1>Tungvint å finne nødvendig informasjon</h1>
         </div>
         <div class="conText">
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora</p>
+          <p>For å finne informasjon om hvordan dagene er oppbygd man først klikke seg inn på timeplanen for så hver enkelt time. I tillegg til at dette er tungvint er informasjonen sjeldent oppdatert og er derfor noen ganger feil. Det er heller ingen lett måte å finne ut når prøvene er, og heller ikke fristen til de obligatoriske oppgavene. Lærerne blir derfor nødt til å legge ut separate innlegg om hver eneste prøve og obligatorisk oppgave. </p>
+        </div>
+        <div class="topic">
+          <h1>Ingen god løsning for kommunikasjon mellom elevene.</h1>
+        </div>
+        <div class="conText">
+          <p>I dag er den eneste muligheten for elevkommunikasjon mail. Det er ikke en effektiv løsning å måtte logge inn på en egen mail-tjeneste forså å gå gjennom hele mail-prosessen for å kunne lese og svare på innspill og spørsmål i for eksempel et gruppeprosjekt. </p>
         </div>
       </div>
     </section>
 
     <section id="solution">
       <div class="container">
-        <div id="main">
+        <div class="main">
           <h1>Placeholder løsninger</h1>
         </div>
         <div class="conText">
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora</p>
+          <p>Denne applikasjonen vil inneholde av alt nødvendige ting som gjør det lettere. Ting som for eksempel timeplan, booking av grupperom, student-chat, mail og mye mer.
+              Siden det er mange studenter som ofte glemmer at de skal ha en innlevering, så vil de bli varslet godt på forhånd før. Dersom det er for eksempel et rombytte på forelesninger vil de også bli varslet på god tid.
+          </br></br>
+          På timeplanen vil de finne de fagene de skal ha til de ulike dagene, pluss at det vil vise en frist til en obligatorisk innlevering, prøve, eksamen eller andre viktige ting til den uke dagen.  Applikasjonen vil varsle elevene når det nærmer seg fristen slik at de vil lett huske det. Dersom læreren fjerner for eksempel en forelesning, vil eleven bli godt varslet før og faget vil bli fjernet fra timeplanen.
+          </br></br>
+          I tillegg er det ikke alle studenter som har facebook, snapchat, skype eller noe lignende. Derfor vil studentene få tilgang til en student-chat der de kan lettere kommunisere med hverandre. Med en gruppearbeid på skolen kan de også lage en gruppechat med andre studenter slik at det blir enkelt for dem å få tak i hverandre.
+          Den andre alternativet er en skolemail som alle studenter vil få tilgang til, og da kan de sende mail til læreren sin eller også til andre studenter.
+        </p>
+
         </div>
       </div>
+    </section>
+
+    <section id="features">
+      <div id="slider-container">
+        <div class="slide">
+          <div class="slideImg">
+
+          </div>
+          <div class="slideText">
+
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slideImg">
+
+          </div>
+          <div class="slideText">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id ="about us">
+
     </section>
 
     <footer>
@@ -100,15 +144,15 @@
         <div id="multimedia">
           <div class="box">
             <img src="./bilder/placeholdericon.png" alt="">
-            <a href="#"><h4>Facebook: @EduLifeHiOA</h4></a>
+            <a href="https://www.facebook.com/EduLifeHiOA/" target="_blank"><h4>Facebook: @EduLifeHiOA</h4></a>
           </div>
           <div class="box">
             <img src="./bilder/placeholdericon.png" alt="">
-            <a href="#"><h4>Twitter: @EduLifeHiOA</h4></a>
+            <a href="https://twitter.com/EduLifeHiOA" target="_blank"><h4>Twitter: @EduLifeHiOA</h4></a>
           </div>
           <div class="box">
             <img src="./bilder/placeholdericon.png" alt="">
-            <a href="#"><h4>Tlf: (+47)916 13 294</h4></a>
+            <h4>Tlf: (+47)916 13 294</h4>
           </div>
         </div>
         <div id="portrait">
@@ -139,4 +183,5 @@
 
 
   </body>
+
 </html>
