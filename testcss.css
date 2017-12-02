@@ -35,6 +35,34 @@ h1, p{
 .conText{
   width:80%;
   margin:auto;
+  padding: 0 0 1px 0;
+}
+
+.conText p{
+  font-size: 1.3em;
+}
+
+.conText1{
+  margin:auto;
+  padding: 0 0 1px 0;
+}
+
+.conText1 p{
+  font-size: 1.3em;
+}
+
+.wrapper{
+  display: flex;
+}
+
+.wrapper img{
+  margin:auto;
+  padding-top:25px;
+  padding-left:25px;
+  width:400px;
+  height:95%;
+  position: relative;
+  bottom:0;
 }
 
 #backUp{
@@ -146,6 +174,10 @@ header nav div img:hover{
   opacity: 100%;
 }*/
 
+#showcase a{
+  text-decoration: none;
+}
+
 #showcase h1{
   margin:auto;
   padding:0;
@@ -195,14 +227,6 @@ header nav div img:hover{
   text-align: center;
 }
 
-.conText{
-  padding: 0 0 1px 0;
-}
-
-.conText p{
-  font-size: 1.3em;
-}
-
 .main{
   padding-top:50px;
 }
@@ -226,7 +250,20 @@ header nav div img:hover{
 }
 
 #slider-container{
+  padding-top:2%;
+  margin:auto;
+  width:80%;
+}
 
+#slider-container .slide{
+  display:flex;
+}
+
+#slider-container .slideText{
+  margin:auto;
+  margin-top: 5%;
+  padding-left: 5%;
+  font-size: 1.5em;
 }
 
 
