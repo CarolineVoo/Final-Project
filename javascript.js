@@ -1,32 +1,31 @@
-var scrollY = 0;
-var distance = 20;
-var speed = 24;
+var sY
+var d = 20;
 function autoScrollTo(el) {
-	var currentY = window.pageYOffset;
-	var targetY = document.getElementById(el).offsetTop;
-	var bodyHeight = document.body.offsetHeight;
-	var yPos = currentY + window.innerHeight;
-	var animator = setTimeout('autoScrollTo(\''+el+'\')',3);
-	if(yPos > bodyHeight){
-		clearTimeout(animator);
+	var cY = window.pageYOffset;
+	var tY = document.getElementById(el).offsetTop;
+	var bH = document.body.offsetHeight;
+	var yP = cY + window.innerHeight;
+	var action = setTimeout('autoScrollTo(\''+el+'\')',3);
+	if(yP > bH){
+		clearTimeout(action);
 	} else {
-		if(currentY < targetY-distance){
-		    scrollY = currentY+distance;
-		    window.scroll(0, scrollY);
+		if(cY < tY-d){
+		    sY = cY+d;
+		    window.scroll(0, sY);
 	    } else {
-		    clearTimeout(animator);
+		    clearTimeout(action);
 	    }
 	}
 }
 
 function resetScroller(el){
-	var currentY = window.pageYOffset;
-    var targetY = document.getElementById(el).offsetTop;
-	var animator = setTimeout('resetScroller(\''+el+'\')',5);
-	if(currentY > targetY){
-		scrollY = currentY-distance;
-		window.scroll(0, scrollY);
+	var cY = window.pageYOffset;
+    var tY = document.getElementById(el).offsetTop;
+	var action = setTimeout('resetScroller(\''+el+'\')',5);
+	if(cY > tY){
+		sY = cY-d;
+		window.scroll(0, sY);
 	} else {
-		clearTimeout(animator);
+		clearTimeout(action);
 	}
 }
