@@ -276,7 +276,6 @@ header nav div img:hover{
 .topLi{
   color:white;
   font-size: 2em;
-  font-weight: bold;
 }
 
 #topics h1{
@@ -624,6 +623,18 @@ nav{
 
 .transblack{
   width:100%;
+}
+
+.conText{
+  width:95%;
+}
+
+.conText p{
+  font-size: 1.5em;
+}
+
+.conText1 p{
+  font-size: 1.5em;
 }
 
 }
