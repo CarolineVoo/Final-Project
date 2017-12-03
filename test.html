@@ -21,9 +21,9 @@
             <ul>
               <li><a href="#div1" onclick="return false;" onmousedown="autoScrollTo('div1');">EduLife?</a></li>
               <li><a href="#" onclick="return false;" onmousedown="autoScrollTo('solution')">Løsning</a></li>
-              <li><a href="#">Funksjoner</a></li>
-              <li><a href="#">Om oss</a></li>
-              <li><a href="#">kontakt</a></li>
+              <li><a href="#" onclick="return false;" onmousedown="autoScrollTo('features')">Funksjoner</a></li>
+              <li><a href="#" onclick="return false;" onmousedown="autoScrollTo('aboutUs')">Om oss</a></li>
+              <li><a href="#" onclick="return false;" onmousedown="autoScrollTo('contact')">Kontakt</a></li>
             </ul>
           </div>
           <div class="nor">
@@ -120,7 +120,8 @@
           <h1>Funksjoner</h1>
         </div>
         <div id="slider-container">
-          <div class="slide">
+
+           <div class="slide fade">
             <div class="slideImg">
               <img src="./bilder/oversikt.png" alt="">
             </div>
@@ -130,24 +131,54 @@
             </div>
           </div>
 
-          <div class="slide">
-            <div class="slideImg">
-
+          <div class="slide fade">
+            <div id="timeplanImg">
+              <img src="./bilder/timeplan.png" alt="">
             </div>
-            <div class="slideText">
-
+            <div id="timeplanText">
+              <h1>Timeplan</h1>
+              <p> Timeplanen vår skal være lett oversiktlig hvor det er enkelt å finne ut hva som skjer, og når det skal skje. Det skal også være lett å endre på timeplanen for lærere. Studentene kan lage en egendefinert fargekode for enklere å for dem huske timeplanen.</p>
             </div>
           </div>
 
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="slide fade">
+            <div class="slideImg">
+              <img src="./bilder/Forum.png" alt="">
+            </div>
+            <div class="slideText">
+              <h1>Forumer</h1>
+              <p> Istedenfor at elevene må bruke andre plattformer for å samarbeide om skolearbeid, vil vår app ha et forum hvor elevene enkelt kan stille spørsmål og gi svar på andres. Lærerne vil også kunne bruke forumet for å hjelpe elever.</p>
+            </div>
+          </div>
+
+          <div class="slide fade">
+            <div class="slideImg">
+              <img src="./bilder/Notification2.png" alt="">
+            </div>
+            <div class="slideText">
+              <h1>Varsler</h1>
+              <p> Applikasjonen vil gjøre det lettere ved å varsle studenten. Dersom timeplanen endrer seg eller studenten har en undervisningstime, så vil de bli varslet godt på forhånd før. Det vil også kunne varsle om fristen til innleveringer og oppgaver som studenter kan glemme. </p>
+            </div>
+          </div>
+
+            <a href="#features" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a href="#features" class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
         </div>
       </div>
+      <script src="javascript2.js" charset="utf-8"></script>
     </section>
 
-    <section id ="about us">
-      <div class="container">
 
+    <section id="aboutUs">
+      <div class="container">
+        <h1>About Us</h1>
+        <p>We are four students who have experienced the inconvenience of having a school platform that is not flexible enough. We have therefore created an app that is more transparent, user-friendly for both student and teacher, easier to relate to, and who also has the ability to communicate with each other. </p>
       </div>
     </section>
 
@@ -182,7 +213,7 @@
             <p>s123456</p>
           </div>
           <div class="face">
-            <img src="./bilder/face.png" alt="">
+            <img src="./bilder/Caroline.jpg" alt="">
             <h2>Caroline Vo</h2>
             <p>s123456</p>
           </div>
