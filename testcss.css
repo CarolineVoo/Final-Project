@@ -281,6 +281,7 @@ header nav div img:hover{
   margin:auto;
   width:100%;
   position: relative;
+  min-height: 500px;
 
 }
 
@@ -292,6 +293,7 @@ header nav div img:hover{
   padding-left: 5%;
 }
 
+
 #slider-container .slideText{
   margin:auto;
   margin-top: 5%;
@@ -301,7 +303,7 @@ header nav div img:hover{
 }
 
 #timeplanImg{
-  padding-top:5%;
+  padding-top:10%;
   padding-left: 5%;
 }
 
@@ -311,6 +313,7 @@ header nav div img:hover{
   font-size: 1.5em;
   padding-right: 5%;
   padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 .prev, .next{
@@ -328,7 +331,8 @@ header nav div img:hover{
   right:0;
 }
 
-.dot {
+
+ .dot {
   cursor:pointer;
   height: 15px;
   width: 15px;
@@ -340,7 +344,7 @@ header nav div img:hover{
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: black;
 }
 
 .fade {
