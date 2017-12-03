@@ -1,30 +1,28 @@
 
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+var sI = 1;
+sS(1);
+function nS(n) {
+  sS(sI += n);
 }
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function tS(n) {
+  sS(sI = n);
 }
-
-function showSlides(n) {
+function sS(n) {
   var i;
-  var slides = document.getElementsByClassName("slide");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+  var side = document.getElementsByClassName("slide");
+  var p = document.getElementsByClassName("punkt");
+  if (n > side.length) {sI = 1}
+  if (n < 1) {sI = side.length}
+  for (i = 0; i < side.length; i++) {
+      side[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+
+  for (i = 0; i < p.length; i++) {
+      p[i].className = p[i].className.replace(" active", "");
   }
   if(window.innerWidth < 768){
-    slides[slideIndex-1].style.display = "block"
-  }else {slides[slideIndex-1].style.display = "flex";}
-  dots[slideIndex-1].className += " active";
+    side[sI-1].style.display = "block"
+  }else {side[sI-1].style.display = "flex";}
+  p[sI-1].className += " active";
 }

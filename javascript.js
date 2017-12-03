@@ -1,11 +1,11 @@
 var sY
 var d = 20;
-function autoScrollTo(el) {
-	var cY = window.pageYOffset;
-	var tY = document.getElementById(el).offsetTop;
-	var bH = document.body.offsetHeight;
+function autoScrollTo(input) {
 	var yP = cY + window.innerHeight;
-	var action = setTimeout('autoScrollTo(\''+el+'\')',3);
+	var bH = document.body.offsetHeight;
+	var cY = window.pageYOffset;
+	var tY = document.getElementById(input).offsetTop;
+	var action = setTimeout('autoScrollTo(\''+input+'\')',3);
 	if(yP > bH){
 		clearTimeout(action);
 	} else {
@@ -18,10 +18,10 @@ function autoScrollTo(el) {
 	}
 }
 
-function resetScroller(el){
+function resetScroller(input){
+	var tY = document.getElementById(input).offsetTop;
 	var cY = window.pageYOffset;
-    var tY = document.getElementById(el).offsetTop;
-	var action = setTimeout('resetScroller(\''+el+'\')',5);
+	var action = setTimeout('resetScroller(\''+input+'\')',5);
 	if(cY > tY){
 		sY = cY-d;
 		window.scroll(0, sY);

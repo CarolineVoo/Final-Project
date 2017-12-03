@@ -11,6 +11,10 @@ h1, p{
   color:#151515;
 }
 
+.textAlign{
+  text-align: center;
+}
+
 /*Global*/
 .orange{
   color:#4073FF;
@@ -339,7 +343,7 @@ header nav div img:hover{
   padding-top: 5%;
 }
 
-.prev, .next{
+.bak, .frem{
   position:absolute;
   width:auto;
   top:50%;
@@ -350,12 +354,12 @@ header nav div img:hover{
 
 }
 
-.next{
+.frem{
   right:0;
 }
 
 
- .dot {
+ .punkt {
   cursor:pointer;
   height: 15px;
   width: 15px;
@@ -366,7 +370,7 @@ header nav div img:hover{
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active, .punkt:hover {
   background-color: black;
 }
 
@@ -474,6 +478,7 @@ nav{
   min-width: 80%;
   margin-left: -26%;
   padding: 1%;
+  z-index: 2000;
 
 }
 
@@ -516,6 +521,7 @@ nav{
   background-image: url('./bilder/Nybakgrunn.jpg');
   background-position: 720px 0;
   background-size: cover;
+  z-index: -2000;
 }
 
 #learn{
