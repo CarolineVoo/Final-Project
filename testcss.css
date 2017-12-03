@@ -103,10 +103,14 @@ header a{
   font-weight: bold;
 }
 
-header nav .links a:hover {
+header nav #links a:hover {
   transition: 0.5s;
   color:#4073FF;
   border-bottom: 1.5px solid #4073FF;
+}
+
+#dropdownCont{
+  display:none;
 }
 
 header ul{
@@ -165,6 +169,11 @@ header nav div img:hover{
   opacity: 1;
 }
 
+#lang{
+  display:flex;
+}
+
+
 /*showcase*/
 
 #showcase {
@@ -173,6 +182,7 @@ header nav div img:hover{
   background-position: no-repeat;
   background-size: cover;
 }
+
 
 #aboutUs{
   min-height: 500px;
@@ -238,6 +248,7 @@ header nav div img:hover{
   color: #151515;
 }
 
+
 #underText{
   padding-bottom:1px;
 }
@@ -246,13 +257,10 @@ header nav div img:hover{
   font-size: 2.5em;
 }
 
-#topics{
-  padding-top:
-}
-
 #topics h1{
   text-align: center;
 }
+
 
 .main{
   padding-top:50px;
@@ -268,6 +276,8 @@ header nav div img:hover{
 }
 
 
+/*------------------------------------------------------------------------------------------------------------------------*/
+
 #contact{
   padding-bottom: 50px;
 }
@@ -282,7 +292,6 @@ header nav div img:hover{
   width:100%;
   position: relative;
   min-height: 500px;
-
 }
 
 .slide{
@@ -394,4 +403,154 @@ footer{
   float:left;
   width:25%;
   text-align: center;
+}
+
+#dropdownBtn{
+  width: 120%;
+  margin-left: 50%;
+  margin-top:5px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/*------------------Media-----------------------*/
+
+@media screen and (max-width: 768px){
+
+nav{
+  width:70%;
+}
+
+.container{
+  width: 95%;
+}
+
+#links{
+  display:none;
+}
+
+#dropdownCont{
+  background-color: #FAFAFA;
+  position: absolute;
+  min-width: 80%;
+  margin-left: -26%;
+  padding: 1%;
+
+}
+
+#dropdownCont a{
+  font-size: 1.5em;
+  text-align: center;
+  color:#151515;
+  display: block;
+  line-height: 2;
+}
+
+#dropdownCont a:hover{
+  background-color: #4073FF;
+  transition: 0.5s;;
+  border: 1.5px solid #151515;
+}
+
+#dropdown:hover #dropdownCont{
+  display: block;
+}
+
+
+#lang{
+  position: absolute;
+  right:10%;
+  float:right;
+  line-height: 0;
+}
+
+#lang img{
+  float:right;
+  height:100%;
+  width:50px;
+  margin:auto;
+  padding-top:10px;;
+}
+
+#showcase {
+  min-height: 700px;
+  background-image: url('./bilder/Nybakgrunn.jpg');
+  background-position: 720px 0;
+  background-size: cover;
+}
+
+#learn{
+  width:50%;
+  height:10%;
+  left:25%;
+}
+
+#learn h1{
+  padding-top:12px;
+  font-size: 2em;
+}
+
+#underText h1{
+  font-size: 2.5em;
+}
+
+.main{
+  padding-top:5px;
+}
+
+.main h1, #contact h1{
+  font-size: 3em;
+  text-align: center;
+  border-bottom: 1.5px solid #4073FF;
+  width:50%;
+  margin:auto;
+  padding: 20px 0 30px 0;
+}
+
+#backUp{
+  text-align: center;
+  background-color: rgba(10, 10, 10, 0.8);
+  width:50px;
+  height:50px;
+  right:15px;
+  bottom:15px;
+}
+
+#backUp:hover{
+  background-color: rgb(10,10,10);
+}
+
+.wrapper{
+  display: block;
+}
+
+.wrapper img{
+  width:90%;
+}
+
+#slider-container .slideImg img{
+  width:45%;
+  margin:auto;
+  padding-left: 25%;
+}
+
+#slider-container .slideText h1{
+  text-align: center;
+}
+
+#timeplanImg{
+  padding-top:10%;
+}
+
+#timeplanImg img{
+  margin:auto;
+  width:95%;
+}
+
+#timeplanText h1{
+  text-align: center;
+}
+
 }
