@@ -16,6 +16,12 @@ h1, p{
   color:#4073FF;
 }
 
+#containerHeader{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
 .container{
   width: 80%;
   margin:auto;
